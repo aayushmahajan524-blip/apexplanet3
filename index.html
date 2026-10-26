@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>QuizMaster</h1>
+        <p>Test your knowledge!</p>
+    </header>
+
+    <main>
+        <!-- Quiz Section -->
+        <section class="quiz-box">
+            <h2>Quick Quiz</h2>
+
+            <p id="question">Loading question...</p>
+
+            <div id="answers"></div>
+
+            <p id="feedback"></p>
+
+            <button id="next-btn" disabled>Next Question</button>
+
+            <p id="score"></p>
+        </section>
+
+        <!-- Image Carousel -->
+        <section class="carousel-box">
+            <h2>Explore Learning</h2>
+
+            <div class="carousel">
+                <button id="prev-btn" aria-label="Previous image">
+                    &#10094;
+                </button>
+
+                <img id="carousel-image"
+                     src="https://picsum.photos/id/20/600/300"
+                     alt="Learning and books">
+
+                <button id="next-image-btn" aria-label="Next image">
+                    &#10095;
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for ApexPlanet Internship Task 3</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
